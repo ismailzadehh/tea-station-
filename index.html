@@ -15,13 +15,28 @@
   </head>
   <body>
     <!-- Navbar -->
+    <!-- Nav Button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
 
-    <!--
-      ===================
-           Header
-      ===================
-      -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
 
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-link">home</a></li>
+        <li><a href="skills.html" class="nav-link">skills</a></li>
+        <li><a href="about.html" class="nav-link">about</a></li>
+        <li><a href="products.html" class="nav-link">products</a></li>
+      </ul>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Header -->
     <header class="header">
       <div class="banner">
         <h2>Over one hundred flavors of</h2>
@@ -33,8 +48,8 @@
         <a href="skills.html" class="btn banner-btn"> explore</a>
       </div>
     </header>
-
     <!--End Of Header -->
+
     <div class="content-divider"></div>
 
     <!-- Skills Section -->
@@ -344,7 +359,7 @@
         <article class="contact-form">
           <h3>contact us</h3>
 
-          <form action="">
+          <form action="https://formspree.io/f/xgeqdjqy" method="POST">
             <div class="form-group">
               <!-- Inputs -->
               <input
@@ -368,17 +383,45 @@
                 placeholder="Message"
               ></textarea>
             </div>
-            <!-- Button -->
-
             <button type="submit" class="submit-btn btn">submit here</button>
           </form>
+          <!-- Button -->
         </article>
         <!--End Of Contact Form -->
       </div>
     </section>
     <!-- End of Contact Section -->
 
-    <!-- End of Navbar -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <!-- Social Icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- End of Social Icon -->
+
+          <!-- Social Icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- End of Social Icon -->
+
+          <!-- Social Icon -->
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- End of Social Icon -->
+        </div>
+        <h4 class="footer-text">
+          &copy <span id="date"></span> <span class="company">tea station</span>
+
+          all rights reserved
+        </h4>
+      </div>
+    </footer>
+    <!-- End of  Footer -->
 
     <script src="app.js"></script>
   </body>
